@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+[class^="scene-"].active .main_txt{visibility:visible !important;}
+[class^="scene-"].active .sub_txt{visibility:visible !important;}
+[class^="scene-"].active .mobile_wrap{visibility:visible !important;}
+[class^="scene-"].active .vi_wrap{visibility:visible !important;}
+[class^="scene-"].active .cont_wrap .info_wrap{visibility:visible !important;}
+
+.anchur { position:absolute; top:-50px; }
+
+@media screen and (min-width:1201px) {
+[class^="scene-"] { position:relative; width:100%; }
+[class^="scene-"] .inner { position:relative; z-index:1; }
+[class^="scene-"] .cont_wrap { overflow:hidden; }
+[class^="scene-"] .main_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .sub_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .mobile_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] .vi_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] [class^="status_wrap-"] { display: inline-block;}	
+
+.scene-1 { padding:200px 0; position:relative; background:url(/theme/basic/img/sub/pitas_back.jpg) no-repeat center / cover; }
+.scene-1 .cont_wrap { width:1200px; margin:auto; position:relative; margin:auto; }
+.scene-1 .cont_wrap .inner { display:flex; }
+.scene-1 .main_txt { overflow:hidden; text-align:left; width:50%; }
+.scene-1 .main_txt H5 { color:#fff; padding:0 0 30px; }
+.scene-1 .main_txt p { color:#fff; padding:0 0 30px; font-family:'GS_M'; font-size:18px; line-height:27px; margin:auto; word-break:keep-all; }
+.scene-1 .main_txt ul { }
+.scene-1 .main_txt ul li { font-size:14px; padding:2px 0; overflow:hidden; display:inline-block; }
+.scene-1 .main_txt ul li span { font-size:13px; padding:0 20px; height:40px; line-height:40px; display:inline-block; border-radius:20px; border:1px solid #fff; color:#fff; }
+.scene-1 .sub_txt { overflow:hidden; text-align:center; width:50%; }
+.scene-1 .sub_txt img { max-width:100%; border-radius:25px; }
+
+.scene-2 { padding:100px 0; position:relative; }
+.scene-2 .cont_wrap { width:1200px; margin:auto; position:relative; }
+}
+
+
+@media screen and (max-width:1200px) and (min-width:901px) {
+[class^="scene-"] { position:relative; width:100%; }
+[class^="scene-"] .inner { position:relative; z-index:1; }
+[class^="scene-"] .cont_wrap { overflow:hidden; }
+[class^="scene-"] .main_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .sub_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .mobile_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] .vi_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] [class^="status_wrap-"] { display: inline-block;}	
+	
+.scene-1 { padding:200px 20px; position:relative; background:url(/theme/basic/img/sub/pitas_back.jpg) no-repeat center / cover; }
+.scene-1 .cont_wrap { position:relative; margin:auto; }
+.scene-1 .cont_wrap .inner { display:flex; }
+.scene-1 .main_txt { overflow:hidden; text-align:left; width:50%; }
+.scene-1 .main_txt H5 { color:#fff; padding:0 0 30px; }
+.scene-1 .main_txt p { color:#fff; padding:0 0 30px; font-family:'GS_M'; font-size:18px; line-height:27px; margin:auto; word-break:keep-all; }
+.scene-1 .main_txt ul { }
+.scene-1 .main_txt ul li { font-size:14px; padding:2px 0; overflow:hidden; display:inline-block; }
+.scene-1 .main_txt ul li span { font-size:13px; padding:0 20px; height:40px; line-height:40px; display:inline-block; border-radius:20px; border:1px solid #fff; color:#fff; }
+.scene-1 .sub_txt { overflow:hidden; text-align:center; width:50%; }
+.scene-1 .sub_txt img { max-width:100%; border-radius:25px; }
+
+.scene-2 { padding:100px 20px; position:relative; }
+.scene-2 .cont_wrap { margin:auto; position:relative; }
+}
+
+
+@media screen and (max-width:900px) {
+[class^="scene-"] { position:relative; width:100%; }
+[class^="scene-"] .inner { position:relative; z-index:1; }
+[class^="scene-"] .cont_wrap { overflow:hidden; }
+[class^="scene-"] .main_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .sub_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .mobile_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] .vi_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] [class^="status_wrap-"] { display: inline-block;}	
+
+.scene-1 { padding:200px 20px; position:relative; background:url(/theme/basic/img/sub/pitas_back.jpg) no-repeat center / cover; }
+.scene-1 .cont_wrap { position:relative; margin:auto; }
+.scene-1 .main_txt { overflow:hidden; text-align:left; }
+.scene-1 .main_txt H5 { color:#fff; padding:0 0 30px; }
+.scene-1 .main_txt p { color:#fff; padding:0 0 30px; font-family:'GS_M'; font-size:18px; line-height:27px; margin:auto; word-break:keep-all; }
+.scene-1 .main_txt ul { }
+.scene-1 .main_txt ul li { font-size:14px; padding:2px 0; overflow:hidden; display:inline-block; }
+.scene-1 .main_txt ul li span { font-size:13px; padding:0 20px; height:40px; line-height:40px; display:inline-block; border-radius:20px; border:1px solid #fff; color:#fff; }
+.scene-1 .sub_txt { overflow:hidden; text-align:center; }
+.scene-1 .sub_txt img { max-width:100%; border-radius:25px; }
+
+.scene-2 { padding:20px; position:relative; }
+.scene-2 .cont_wrap { margin:auto; position:relative; }
+}
+
+

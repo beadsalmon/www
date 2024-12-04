@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+[class^="scene-"].active .main_txt{visibility:visible !important;}
+[class^="scene-"].active .sub_txt{visibility:visible !important;}
+[class^="scene-"].active .mobile_wrap{visibility:visible !important;}
+[class^="scene-"].active .vi_wrap{visibility:visible !important;}
+[class^="scene-"].active .cont_wrap .info_wrap{visibility:visible !important;}
+
+.anchur { position:absolute; top:-50px; }
+
+@media screen and (min-width:1201px) {
+[class^="scene-"] { position:relative; width:100%; }
+[class^="scene-"] .inner { position:relative; z-index:1; }
+[class^="scene-"] .cont_wrap { overflow:hidden; }
+[class^="scene-"] .main_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .sub_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .mobile_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] .vi_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] [class^="status_wrap-"] { display: inline-block;}	
+
+.scene-1 { padding:200px 0; position:relative; background:url(/theme/basic/img/sub/shotrack_back.jpg) no-repeat center / cover; }
+.scene-1 .cont_wrap { width:1200px; margin:auto; position:relative; }
+.scene-1 .main_txt { overflow:hidden; text-align:left; width:50%; }
+.scene-1 .main_txt img { width:400px; margin-bottom:25px; }
+.scene-1 .main_txt p { color:#fff; padding:0 0 30px; font-family:'GS_M'; font-size:18px; line-height:27px; margin:auto; word-break:keep-all; }
+.scene-1 .main_txt ul { }
+.scene-1 .main_txt ul li { font-size:14px; padding:0 20px; height:40px; line-height:40px; border-radius:20px; border:1px solid #fff; display:inline-block; color:#fff; }
+.scene-1 .sub_txt { overflow:hidden; text-align:center; padding:50px 0 0; width:50%; }
+.scene-1 .sub_txt ul { display:flex; }
+.scene-1 .sub_txt ul li { width:calc(33.3333% - 24px); margin-right:5px; }
+.scene-1 .sub_txt img { max-width:100%; }
+
+.scene-2 { padding:100px 0; position:relative; }
+.scene-2 .cont_wrap { width:1200px; margin:auto; position:relative; }
+.scene-2 .cont_wrap .inner { display:flex; }
+.scene-2 .main_txt { width:50%; padding:50px 0 0; }
+.scene-2 .sub_txt { width:50%; padding:0 50px 0 0; }
+.scene-2 .sub_txt ul { }
+.scene-2 .sub_txt ul li { box-sizing:border-box; padding:10px 0; }
+.scene-2 .sub_txt h2 { font-size:42px; color:#333; font-family:'GS_B'; }
+.scene-2 .sub_txt h3 { font-size:21px; color:#333; font-family:'GS_M'; }
+.scene-2 .sub_txt p { color:#666; padding:0 0 10px; font-size:15px; }
+
+.scene-3 { padding:100px 0; position:relative; background-color:#f1f5f6; }
+.scene-3 .cont_wrap { width:1200px; margin:auto; position:relative; }
+.scene-3 .main_txt { text-align:center; display:grid; grid-template-columns:repeat(4, 1fr); column-gap:10px; row-gap:10px; }
+.scene-3 .main_txt h2 { font-size:27px; font-family:'GS_M'; font-weight:500; text-align:center; color:#fff; }
+.scene-3 .main_txt h2:after {display:block; clear:both;content:""; width:15px; height:1px; background-color:#fff; margin:15px auto; }
+.scene-3 .main_txt span { padding:15px 0; display:block; position:absolute; bottom:0px; left:0px; width:100%; z-index:1001; }
+.scene-3 .main_txt p { color:#fff; min-height:70px; }
+.scene-3 .main_txt div { position:relative; padding:0; overflow:hidden; }
+.scene-3 .main_txt div img { max-width:100%; }
+.scene-3 .main_txt div h6 { transition-duration: 0.4s; }
+.scene-3 .main_txt div h6:hover { filter:blur(4px); transform:scale(1.1,1.1); }
+.scene-3 .sub_txt { text-align:left; padding:0 0 50px; }
+.scene-3 .sub_txt h2 { font-size:32px; font-family:'GS_M'; font-weight:500; color:#000; }
+.scene-3 .sub_txt font { display:block; color:#666; margin-bottom:15px; }
+}
+
+
+@media screen and (max-width:1200px) and (min-width:901px) {
+[class^="scene-"] { position:relative; width:100%; }
+[class^="scene-"] .inner { position:relative; z-index:1; }
+[class^="scene-"] .cont_wrap { overflow:hidden; }
+[class^="scene-"] .main_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .sub_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .mobile_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] .vi_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] [class^="status_wrap-"] { display: inline-block;}	
+	
+.scene-1 { padding:200px 20px; position:relative; background:url(/theme/basic/img/sub/shotrack_back.jpg) no-repeat center / cover; }
+.scene-1 .cont_wrap { margin:auto; position:relative; }
+.scene-1 .main_txt { overflow:hidden; text-align:left; width:50%; }
+.scene-1 .main_txt img { width:400px; margin-bottom:25px; }
+.scene-1 .main_txt p { color:#fff; padding:0 0 30px; font-family:'GS_M'; font-size:18px; line-height:27px; margin:auto; word-break:keep-all; }
+.scene-1 .main_txt ul { }
+.scene-1 .main_txt ul li { font-size:14px; padding:0 20px; height:40px; line-height:40px; border-radius:20px; border:1px solid #fff; display:inline-block; color:#fff; }
+.scene-1 .sub_txt { overflow:hidden; text-align:center; padding:50px 0 0; width:50%; }
+.scene-1 .sub_txt ul { display:flex; }
+.scene-1 .sub_txt ul li { width:calc(33.3333% - 24px); margin-right:5px; }
+.scene-1 .sub_txt img { max-width:100%; }
+
+.scene-2 { padding:100px 20px; position:relative; }
+.scene-2 .cont_wrap { margin:auto; position:relative; }
+.scene-2 .cont_wrap .inner { display:flex; }
+.scene-2 .main_txt { width:50%; padding:50px 0 0; }
+.scene-2 .sub_txt { width:50%; padding:0 50px 0 0; }
+.scene-2 .sub_txt ul { }
+.scene-2 .sub_txt ul li { box-sizing:border-box; padding:10px 0; }
+.scene-2 .sub_txt h2 { font-size:42px; color:#333; font-family:'GS_B'; }
+.scene-2 .sub_txt h3 { font-size:21px; color:#333; font-family:'GS_M'; }
+.scene-2 .sub_txt p { color:#666; padding:0 0 10px; font-size:15px; }
+
+.scene-3 { padding:100px 20px; position:relative; background-color:#f1f5f6; }
+.scene-3 .cont_wrap { margin:auto; position:relative; }
+.scene-3 .main_txt { text-align:center; display:grid; grid-template-columns:repeat(4, 1fr); column-gap:10px; row-gap:10px; }
+.scene-3 .main_txt h2 { font-size:27px; font-family:'GS_M'; font-weight:500; text-align:center; color:#fff; }
+.scene-3 .main_txt h2:after {display:block; clear:both;content:""; width:15px; height:1px; background-color:#fff; margin:15px auto; }
+.scene-3 .main_txt span { padding:15px 0; display:block; position:absolute; bottom:0px; left:0px; width:100%; z-index:1001; }
+.scene-3 .main_txt p { color:#fff; min-height:70px; }
+.scene-3 .main_txt div { position:relative; padding:0; overflow:hidden; }
+.scene-3 .main_txt div img { max-width:100%; }
+.scene-3 .main_txt div h6 { transition-duration: 0.4s; }
+.scene-3 .main_txt div h6:hover { filter:blur(4px); transform:scale(1.1,1.1); }
+.scene-3 .sub_txt { text-align:left; padding:0 0 50px; }
+.scene-3 .sub_txt h2 { font-size:32px; font-family:'GS_M'; font-weight:500; color:#000; }
+.scene-3 .sub_txt font { display:block; color:#666; margin-bottom:15px; }
+}
+
+
+@media screen and (max-width:900px) {
+[class^="scene-"] { position:relative; width:100%; }
+[class^="scene-"] .inner { position:relative; z-index:1; }
+[class^="scene-"] .cont_wrap { overflow:hidden; }
+[class^="scene-"] .main_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .sub_txt { position: relative; visibility:hidden; }
+[class^="scene-"] .mobile_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] .vi_wrap { position: relative; visibility:hidden; }
+[class^="scene-"] [class^="status_wrap-"] { display: inline-block;}	
+
+.scene-1 { padding:200px 20px; position:relative; background:url(/theme/basic/img/sub/shotrack_back.jpg) no-repeat center / cover; }
+.scene-1 .cont_wrap { margin:auto; position:relative; }
+.scene-1 .main_txt { overflow:hidden; text-align:left; }
+.scene-1 .main_txt img { max-width:80%; margin-bottom:25px; }
+.scene-1 .main_txt p { color:#fff; padding:0 0 30px; font-family:'GS_M'; font-size:18px; line-height:27px; margin:auto; word-break:keep-all; }
+.scene-1 .main_txt ul { }
+.scene-1 .main_txt ul li { font-size:14px; padding:0 20px; height:40px; line-height:40px; border-radius:20px; border:1px solid #fff; display:inline-block; color:#fff; margin-bottom:4px; }
+.scene-1 .sub_txt { overflow:hidden; text-align:center; padding:50px 0 0; }
+.scene-1 .sub_txt ul { display:flex; }
+.scene-1 .sub_txt ul li { width:calc(33.3333% - 5px); margin-right:5px; }
+.scene-1 .sub_txt img { max-width:100%; }
+
+.scene-2 { padding:100px 20px; position:relative; }
+.scene-2 .cont_wrap { margin:auto; position:relative; }
+.scene-2 .main_txt { padding:50px 0 0; }
+.scene-2 .sub_txt { padding:0; }
+.scene-2 .sub_txt ul { }
+.scene-2 .sub_txt ul li { box-sizing:border-box; padding:10px 0; }
+.scene-2 .sub_txt h2 { font-size:32px; color:#333; font-family:'GS_B'; }
+.scene-2 .sub_txt h3 { font-size:21px; color:#333; font-family:'GS_M'; }
+.scene-2 .sub_txt p { color:#666; padding:0 0 10px; font-size:15px; }
+
+.scene-3 { padding:100px 20px; position:relative; background-color:#f1f5f6; }
+.scene-3 .cont_wrap { margin:auto; position:relative; }
+.scene-3 .main_txt { text-align:center; display:grid; grid-template-columns:repeat(2, 1fr); column-gap:10px; row-gap:10px; }
+.scene-3 .main_txt h2 { font-size:21px; font-family:'GS_M'; font-weight:500; text-align:center; color:#fff; }
+.scene-3 .main_txt h2:after {display:block; clear:both;content:""; width:15px; height:1px; background-color:#fff; margin:15px auto; }
+.scene-3 .main_txt span { padding:15px 0; display:block; position:absolute; bottom:0px; left:0px; width:100%; z-index:1001; }
+.scene-3 .main_txt p { color:#fff; min-height:70px; margin:0 20px; word-break:keep-all; }
+.scene-3 .main_txt div { position:relative; padding:0; overflow:hidden; }
+.scene-3 .main_txt div img { max-width:100%; }
+.scene-3 .main_txt div h6 { transition-duration: 0.4s; }
+.scene-3 .main_txt div h6:hover { filter:blur(4px); transform:scale(1.1,1.1); }
+.scene-3 .sub_txt { text-align:left; padding:0 0 50px; }
+.scene-3 .sub_txt h2 { font-size:32px; font-family:'GS_M'; font-weight:500; color:#000; }
+.scene-3 .sub_txt font { display:block; color:#666; margin-bottom:15px; }
+}
+
+

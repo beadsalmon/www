@@ -1,0 +1,171 @@
+ @charset "utf-8";
+
+/* ******************  메인 비주얼 ********************** */
+#mainVisual{ overflow:hidden; position:relative;}
+.main-visual-wrapper{position:relative; height:100%;}
+/* 메인 비주얼 :: 이미지 */
+.main-visual-slider {
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	background-color:#000;
+}
+.main-visual-slider .swiper-slide {
+	overflow: hidden;
+	color: #fff;
+}
+.main-visual-slider .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    background: -moz-linear-gradient(top, black 0, transparent 50%, transparent 63%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-linear-gradient(top, black 0, transparent 50%, transparent 63%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, black 0, transparent 50%, transparent 63%, rgba(0, 0, 0, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#c9000000', GradientType=0);
+    transition: all 2.5s ease;
+}
+.main-visual-slider .swiper-slide-duplicate-active .overlay,
+.main-visual-slider .swiper-slide-active .overlay {
+    opacity: .7;
+}
+.main-visual-slider .swiper-slide .visual-img{position:absolute; top:0px; left:0px; bottom:0px; right:0px; width:1649px; height:969px; width:100%;}
+.main-visual-slider .swiper-container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.main-visual-slider .slide-inner {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+
+/* 메인 비주얼 :: 텍스트 */
+@media screen and (min-width:1201px) {
+.main-visual-item .main-visual-txt-con{
+	position:absolute; 
+	top:50%; left:0px;
+	width:100%; 
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding:0 100px;
+	box-sizing:border-box;
+}
+}
+
+@media screen and (max-width:1200px) and (min-width:901px) {
+.main-visual-item .main-visual-txt-con{
+	position:absolute; 
+	top:50%; left:0px;
+	width:100%; 
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding:0 100px;
+	box-sizing:border-box;
+}
+}
+
+@media screen and (max-width:900px) {
+.main-visual-item .main-visual-txt-con{
+	position:absolute; 
+	top:50%; left:0px;
+	width:100%; 
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	padding:0 20px;
+	box-sizing:border-box;
+}
+}
+
+
+.main-visual-item .main-visual-txt-con .main-visual-txt1,
+.main-visual-item .main-visual-txt-con .main-visual-txt2,
+.main-visual-item .main-visual-txt-con .main-visual-txt3,
+.main-visual-item .main-visual-txt-con .main-visual-txt4{
+	opacity:0; 
+	
+}
+.main-visual-item .main-visual-txt-con .main-visual-txt2.font-size,
+.main-visual-item .main-visual-txt-con .main-visual-txt3.font-size,
+.main-visual-item .main-visual-txt-con .main-visual-txt4.font-size{
+	letter-spacing:-1px; 
+}
+.main-visual-item .main-visual-txt-con .main-visual-txt1{ font-weight:500; color:#fff; margin-bottom:25px;}
+.main-visual-txt1.cm-word-split-JS.splitting .word{line-height: 1.1;}
+.main-visual-item .main-visual-txt-con .main-visual-txt2,
+.main-visual-item .main-visual-txt-con .main-visual-txt3,
+.main-visual-item .main-visual-txt-con .main-visual-txt4
+{ font-weight: 500; line-height: 1.28; color:#fff;}
+
+/* 메인 비주얼 :: active효과 */
+.main-visual-item.swiper-slide-active .main-visual-txt1,
+.main-visual-item.swiper-slide-active .main-visual-txt2,
+.main-visual-item.swiper-slide-active .main-visual-txt3,
+.main-visual-item.swiper-slide-active .main-visual-txt4{
+	-webkit-animation: text-active-animation 1.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+	animation: text-active-animation 1.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.main-visual-item.swiper-slide-active .main-visual-txt-con .main-visual-txt1{}
+.main-visual-item.swiper-slide-active .main-visual-txt-con .main-visual-txt2{ -webkit-animation-delay:0.7s; animation-delay:0.7s;}
+.main-visual-item.swiper-slide-active .main-visual-txt-con .main-visual-txt3{ -webkit-animation-delay:0.9s; animation-delay:0.9s;}
+.main-visual-item.swiper-slide-active .main-visual-txt-con .main-visual-txt4{ -webkit-animation-delay:1.2s; animation-delay:1.2s;}
+.main-visual-item .main-visual-txt1.splitting .char{
+	-webkit-animation: text-fade-out 1.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+	animation: text-fade-out 1.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.main-visual-item.swiper-slide-active .main-visual-txt1.splitting .char{
+	-webkit-animation: text-active-animation 1.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+	animation: text-active-animation 1.5s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes text-active-animation {
+	from {
+		opacity:0;filter:Alpha(opacity=0);
+		-webkit-transform: translateY(50px); 
+		transform: translateY(50px); 
+	}
+	to {
+		opacity:1.0;filter:Alpha(opacity=100);
+		-webkit-transform: translateY(0); 
+		transform: translateY(0); 
+	}
+}
+@keyframes text-fade-out {
+	from {
+		opacity:1.0;filter:Alpha(opacity=100);
+	}
+	to {
+		opacity:0;filter:Alpha(opacity=0);
+	}
+}
+
+@media all and ( min-width: 1921px ) , ( min-height: 969px ), ( max-width: 1920px) {
+	.main-visual-slider .swiper-slide .visual-img{height:100%; background-size:cover !important;}
+	.main-visual-slider .swiper-slide .visual-img img{display:none;}
+}
+
+
+
+/* 메인 비주얼 :: 화살표 */
+.main-visual-controls{position:absolute; bottom:94px; left:50%; margin-left:-150px; z-index:11; font-size:13px; color:#fff; width:300px; text-align:center; }
+.main-visual-control-btns{ }
+.main-visual-control-btns button{width:50px; height:50px; display:inline-block; margin:0 10px; border-radius:100%; border:0px; background-color:transparent; }
+.main-visual-control-btns button i{font-size: 14px; color: #fff;}
+.main-visual-control-btns button:hover{ background-color:rgba(255,255,255,0.2);}
+.main-visual-control-btns .slide-prev-btn { background-image:url(/theme/basic/inc/img/arrow_left.png); background-size:auto 80%; background-position:center; background-repeat:no-repeat; }
+.main-visual-control-btns .slide-next-btn { background-image:url(/theme/basic/inc/img/arrow_right.png); background-size:auto 80%; background-position:center; background-repeat:no-repeat; }

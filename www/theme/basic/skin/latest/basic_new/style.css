@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* 내용관리 */
+@media screen and (min-width:1201px) {
+/* 새글 스킨 (latest) */
+.lat_new {position:relative; padding:30px; text-align:left; }
+.lat_new .lat_title {display:block;line-height:35px;font-size:12px;color:#253dbe; border-bottom:1px solid #900; }
+.lat_new .lat_title a {position:relative;color:#fff;display:inline-block; background-color:#900; width:120px; text-align:center; }
+
+.lat_new ul {padding:10px 0; text-align:center; display:grid; grid-template-columns:repeat(4, 1fr); column-gap:14px; row-gap:14px; }
+.lat_new li {position:relative; background-color:#f2f5f7; padding:20px; box-shadow:0 0 15px rgba(0,0,0,0.2); text-align:left; }
+.lat_new li > a { font-family:'GS_M'; font-weight:500; font-size:18px; line-height:27px; display:block; min-height:100px; }
+.lat_new li > a:hover { color:#003b66; }
+.lat_new li p { font-size:13px; color:#666; }
+.lat_new li .lt_date { padding-bottom:25px; }
+.lat_new li .lt_date b { display:block; font-weight:bold; font-size:36px; color:#222; font-family:'GS_B'; }
+.lat_new li .lt_date span { display:block; font-size:12px; color:#222; font-family:'GS_B'; }
+.lat_new li .lt_text { text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp:2; /* 라인수 */ -webkit-box-orient: vertical; word-wrap:break-word; height:50px; }
+.lat_new li img { max-width:100%; }
+.lat_new .lt_more { text-align:center; padding:25px 0 0; }
+.lat_new .lt_more a { display:inline-block; height:50px; line-height:50px; color:#003b66; font-weight:bold; font-family:'SJ_R'; font-size:15px; letter-spacing:1.2px; }
+.lat_new .lt_more a:hover { color:#777; }
+.lat_new .lt_allmore { display:block; text-align:center; clear:both; margin-top:70px; }
+.lat_new .lt_allmore a { display:inline-block; height:40px; line-height:40px; color:#fff; border-radius:5px; text-align:center; background-color:#003b66; padding:0 15px; font-weight:bold; font-family:'SJ_R'; font-size:15px; }
+.lat_new .lt_allmore a:hover { color:#ff0; }
+
+.lat_new .empty_li {line-height:230px;color:#666;text-align:center;padding:0}
+.lat_new .empty_li:before {background:none;padding:0}
+}
+
+@media screen and (max-width:1200px) and (min-width:901px) {
+/* 새글 스킨 (latest) */
+.lat_new {position:relative; padding:30px; text-align:left; }
+.lat_new .lat_title {display:block;line-height:35px;font-size:12px;color:#253dbe; border-bottom:1px solid #900; }
+.lat_new .lat_title a {position:relative;color:#fff;display:inline-block; background-color:#900; width:120px; text-align:center; }
+
+.lat_new ul {padding:10px 0; text-align:center; display:grid; grid-template-columns:repeat(3, 1fr); column-gap:14px; row-gap:14px; }
+.lat_new li {position:relative; background-color:#f2f5f7; padding:20px; box-shadow:0 0 15px rgba(0,0,0,0.2); text-align:left; }
+.lat_new li > a { font-family:'GS_M'; font-weight:500; font-size:18px; line-height:27px; display:block; min-height:100px; }
+.lat_new li > a:hover { color:#003b66; }
+.lat_new li p { font-size:13px; color:#666; }
+.lat_new li .lt_date { padding-bottom:25px; }
+.lat_new li .lt_date b { display:block; font-weight:bold; font-size:36px; color:#222; font-family:'GS_B'; }
+.lat_new li .lt_date span { display:block; font-size:12px; color:#222; font-family:'GS_B'; }
+.lat_new li .lt_text { text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp:2; /* 라인수 */ -webkit-box-orient: vertical; word-wrap:break-word; height:50px; }
+.lat_new li img { max-width:100%; }
+.lat_new .lt_more { text-align:center; padding:25px 0 0; }
+.lat_new .lt_more a { display:inline-block; height:50px; line-height:50px; color:#003b66; font-weight:bold; font-family:'SJ_R'; font-size:15px; letter-spacing:1.2px; }
+.lat_new .lt_more a:hover { color:#777; }
+.lat_new .lt_allmore { display:block; text-align:center; clear:both; margin-top:70px; }
+.lat_new .lt_allmore a { display:inline-block; height:40px; line-height:40px; color:#fff; border-radius:5px; text-align:center; background-color:#003b66; padding:0 15px; font-weight:bold; font-family:'SJ_R'; font-size:15px; }
+.lat_new .lt_allmore a:hover { color:#ff0; }
+
+.lat_new .empty_li {line-height:230px;color:#666;text-align:center;padding:0}
+.lat_new .empty_li:before {background:none;padding:0}
+}
+
+@media screen and (max-width:900px) {
+/* 새글 스킨 (latest) */
+.lat_new {position:relative; padding:30px 0; text-align:left; }
+.lat_new .lat_title {display:block;line-height:35px;font-size:12px;color:#253dbe; border-bottom:1px solid #900; }
+.lat_new .lat_title a {position:relative;color:#fff;display:inline-block; background-color:#900; width:120px; text-align:center; }
+
+.lat_new ul {padding:10px; text-align:center; }
+.lat_new li {position:relative; background-color:#f2f5f7; padding:20px; box-shadow:0 0 5px rgba(0,0,0,0.2); text-align:left; margin-bottom:10px; }
+.lat_new li > a { font-weight:bold; font-family:'SJ_R'; font-size:21px; font-weight:bold; }
+.lat_new li > a:after { visibility:visible; content:""; width:15px; height:2px; background-color:#222; display:block; margin:15px 0; }
+.lat_new li > a:hover { color:#003b66; }
+.lat_new li p { font-size:13px; color:#666; }
+.lat_new li .lt_date { padding-bottom:25px; }
+.lat_new li .lt_date b { display:block; font-weight:bold; font-size:36px; color:#222; font-family:'GS_B'; }
+.lat_new li .lt_date span { display:block; font-size:12px; color:#222; font-family:'GS_B'; }
+.lat_new li .lt_text { text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp:2; /* 라인수 */ -webkit-box-orient: vertical; word-wrap:break-word; height:50px; }
+.lat_new li img { max-width:100%; }
+.lat_new .lt_more { text-align:center; padding:25px 0 0; }
+.lat_new .lt_more a { display:inline-block; height:50px; line-height:50px; color:#003b66; font-weight:bold; font-family:'SJ_R'; font-size:15px; letter-spacing:1.2px; }
+.lat_new .lt_more a:hover { color:#777; }
+.lat_new .lt_allmore { display:block; text-align:center; clear:both; margin-top:70px; }
+.lat_new .lt_allmore a { display:inline-block; height:40px; line-height:40px; color:#fff; border-radius:5px; text-align:center; background-color:#003b66; padding:0 15px; font-weight:bold; font-family:'SJ_R'; font-size:15px; }
+.lat_new .lt_allmore a:hover { color:#ff0; }
+
+.lat_new .empty_li {line-height:230px;color:#666;text-align:center;padding:0}
+.lat_new .empty_li:before {background:none;padding:0}
+}
+
+
+

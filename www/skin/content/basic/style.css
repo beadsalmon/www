@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* 내용관리 */
+#ctt {margin:10px 0;padding:20px;background:#fff}
+.ctt_admin {text-align:right}
+#ctt header h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
+#ctt_con {padding:10px 0;line-height:1.6em}
+#ctt_con img{max-width:100%;height:auto}
+#ctt_con table { width:100%; border:0; padding:0px; border-top:1px solid #ddd; border-right:1px solid #ddd; }
+#ctt_con table tr th, #ctt_con table tr td { padding:10px; border-left:1px solid #ddd; border-bottom:1px solid #ddd; }
+#ctt_con table .top_bg { background-color:#666; color:#fff; text-align:center; }
+#ctt_con table .tab_bg { background-color:#999; color:#fff; text-align:center; }
+#ctt_con table .name { background-color:#f6f6f6; width:100px; text-align:center; }
+.ctt_img {text-align:center}
+
